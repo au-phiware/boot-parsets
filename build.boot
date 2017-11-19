@@ -18,11 +18,10 @@
                {:compiler-options
                 {:main 'boot-parsets.core
                  :install-deps true
-                 :foreign-libs [#_{:file "node_modules/d3/d3.js"
-                                   :provides ["d3"]}
-                                ]
+                 :foreign-libs [{:file "es6"
+                                :module-type :es6}]
                  :npm-deps     {:d3 "3.5.16"
-                                :d3.parsets "github:jasondavies/d3-parsets#v1.2.4"}
+                                }
                  :optimizations        :none
                  :pretty-print         true
                  :source-map           true

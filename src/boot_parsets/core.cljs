@@ -1,7 +1,7 @@
 (ns
   boot-parsets.core
   (:require [d3]
-            [d3.parsets])
+            [d3.parsets :refer [parsets]])
   (:import (goog.string format)))
 
 (let [w 400
@@ -12,7 +12,7 @@
               (.attr "width" w)
               (.attr "height" h)
               (.datum []))
-      chart (-> d3 .parsets
+      chart (-> (parsets)
                 (.width w)
                 (.height h))
       svg (-> svg
