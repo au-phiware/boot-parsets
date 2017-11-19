@@ -1,7 +1,7 @@
 (ns
   boot-parsets.core
   (:require [d3]
-            [d3.parsets :refer [parsets]])
+            [parsets :refer [parsets]])
   (:import (goog.string format)))
 
 (let [w 400
